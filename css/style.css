@@ -1,0 +1,98 @@
+a {
+    text-decoration: none !important;
+}
+
+.cuboLogo {
+    height: 4rem;
+    margin-right: 10px;
+}
+
+.goUp {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.lineaVDer {
+    border-right: 1px solid white;
+    height: 100%;
+    left: 50%;
+}
+
+.lineaVIzq {
+    border-left: 1px solid white;
+    height: 100%;
+    left: 50%;
+}
+
+.bi-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.bi-facebook {
+    color: #3b5998;
+}
+
+.bi-whatsapp {
+    color: #25D366;
+}
+
+/* Media Querie de tamaño especial */
+@media screen and (max-width: 341px) {
+    .cuboLogo {
+        display: none;
+    }
+}
+
+/* Media Querie Small */
+@media screen and (max-width: 576px) {
+    .quitBorder div {
+        border: none !important;
+    }
+
+    .tarjetaPr {
+        flex-direction: column;
+    }
+
+    .mapLg {
+        display: none;
+    }
+}
+
+/* Media Querie Large */
+@media screen and (max-width: 992px) {
+    .espacioPr {
+        display: none;
+    }
+
+    .maps {
+        justify-content: center !important;
+    }
+
+    .titleContact {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .mapSm {
+        display: none;
+    }
+}
+
+.linkRedes:hover {
+    text-decoration: underline !important;
+}
+
+/* Menor a 576 Extra Small
+576 Small
+768 Medium
+992 Large
+1200 X Large
+1400 XX Large */
