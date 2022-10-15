@@ -1,4 +1,5 @@
-$(document).ready(function(){
+/* Boton Flotante Subir */
+/* $(document).ready(function(){
     $('.goUp').click(function(){
         $('body, html').animate({
             scrollTop: '0px'
@@ -12,4 +13,4 @@ $(document).ready(function(){
             $('.goUp').slideUp(300);
         }
     });
-});
+}); */

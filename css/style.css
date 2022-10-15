@@ -7,12 +7,24 @@ a {
     margin-right: 10px;
 }
 
-.goUp {
+/* .goUp {
     display: none;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     right: 20px;
+} */
+
+.floatingWhatsApp {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+span .bi-whatsapp {
+    color: white;
 }
 
 .lineaVDer {
@@ -84,6 +96,11 @@ a {
     .mapSm {
         display: none;
     }
+}
+
+span .bi-whatsapp:hover {
+    background-color: white !important;
+    color: green;
 }
 
 .linkRedes:hover {

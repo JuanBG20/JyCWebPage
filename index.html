@@ -14,13 +14,14 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>J&C Impresiones 3D</title>
 </head>
 <body class="bg-dark">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img class="cuboLogo" src="/img/cuboLogo.png" alt="Logo">
                 J&C Impresiones 3D
             </a>
@@ -32,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -40,16 +41,16 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">Plastico</a>
+                                <a class="dropdown-item" href="productos.html">Plastico</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Madera</a>
+                                <a class="dropdown-item" href="productos.html#prMadera">Madera</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Personalizados</a>
+                                <a class="dropdown-item" href="productos.html#prPersonalizados">Personalizados</a>
                             </li>
                         </ul>
                     </li>
@@ -62,8 +63,16 @@
         </div>
     </nav>
 
-    <span class="goUp bg-secondary p-3 fs-5">
+    <!-- Boton Flotante Subir -->
+    <!-- <span class="goUp bg-secondary p-3 px-4 fs-5 rounded-5">
         <i class="bi bi-chevron-up"></i>
+    </span> -->
+
+    <!-- Boton Flotante WhatsApp -->
+    <span class="floatingWhatsApp">
+        <a href="https://wa.me/542364509648" target="_blank">
+            <i class="bi bi-whatsapp bg-success p-3 px-4 fs-4 rounded-5"></i>
+        </a>
     </span>
 
     <main>
@@ -162,14 +171,14 @@
 
             <!-- Extras -->
             <div class="row mt-3">
-                <a class="link-primary" href="#">
+                <a class="link-primary" href="productos.html">
                     <i class="bi bi-arrow-right me-1"></i>
                     Ver todos los productos
                 </a>
             </div>
 
             <div class="row mt-3">
-                <a class="link-primary" href="#">
+                <a class="link-primary" href="productos.html#prPersonalizados">
                     <i class="bi bi-arrow-right me-1"></i>
                     Realizar un encargo personalizado
                 </a>
@@ -229,6 +238,14 @@
                     <i class="bi bi-whatsapp me-1"></i>
                     <a class="link-light linkRedes" target="_blank" href="https://wa.me/542364509648">WhatsApp</a>
                 </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12 text-secondary text-center">
+                Desarrollado por Juan Bautista Galván
             </div>
         </div>
     </footer>
