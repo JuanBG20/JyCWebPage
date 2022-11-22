@@ -12,6 +12,10 @@ img {
     margin-right: 10px;
 }
 
+.bi-cart2 {
+    cursor: pointer;
+}
+
 .floatingWhatsApp {
     display: inline-block;
     cursor: pointer;
