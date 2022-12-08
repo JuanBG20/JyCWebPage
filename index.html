@@ -8,9 +8,6 @@
     <!-- Facebook Verification -->
     <meta name="facebook-domain-verification" content="cgqq410dmorvxv3xukst0332loi76o" />
 
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="ZPNcOhCXt0JX2uXQtFympLq12Bs4-cMaYOPQdwpPNrk" />
-    
     <!-- KeyWords -->
     <meta name="keywords" content="Impresion 3D, Corte Laser, CNC, Madera, Plastico, J&C, Catalogo, Pedidos, Personalizado">
     <!-- Description -->
@@ -75,14 +72,17 @@
                     </li>
 
                     <!-- <li class="nav-item">
-                        <i class="nav-link ms-2 bi bi-cart2"></i>
+                        <button id="btnLupa" class="nav-link btn btn-link"><i class="bi bi-search"></i></button>
                     </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Modal Carrito -->
+    <!-- Cuadro de Busqueda -->
+    <div class="cuadroBusqueda">
+        <input id="inputBusacdor" type="text" name="buscador" placeholder="Buscar">
+    </div>
 
     <!-- Boton Flotante WhatsApp -->
     <span class="floatingWhatsApp">
@@ -91,10 +91,39 @@
         </a>
     </span>
 
+    <!-- Zoom de Imagen -->
+    <div id="overlay" class="overlay">
+        <div class="contenedorImg">
+            <button id="btnCerrar">&times;</button>
+            <img src="" alt="">
+        </div>
+    </div>
+
     <main>
-        <!-- Principal -->
+        <!-- Banner -->
         <!-- <section>
-                            Para agregar banner
+            <div id="bannerInicio" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bannerInicio" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#bannerInicio" data-bs-slide-to="1" ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 imgBanner" src="img/cuboLogo.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 imgBanner" src="img/cuboLogo.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerInicio" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerInicio" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section> -->
 
         <!-- Muestra de Productos -->
@@ -110,7 +139,7 @@
                 <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
                     <div class="col-6">
                         <div class="d-flex col-12 justify-content-center align-items-center">
-                            <img src="img/productos/mates/river.jpg" loading="lazy" alt="J&C Mate River">
+                            <img class="imgPr" src="img/productos/mates/river.jpg" loading="lazy" alt="J&C Mate River">
                         </div>
                     </div> 
                     <div class="col-6">
@@ -130,7 +159,7 @@
                 <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
                     <div class="col-6">
                         <div class="d-flex col-12 justify-content-center align-items-center">
-                            <img src="img/productos/llaveros/spiderman.jpg" loading="lazy" alt="J&C Llavero SpiderMan">
+                            <img class="imgPr" src="img/productos/llaveros/spiderman.jpg" loading="lazy" alt="J&C Llavero SpiderMan">
                         </div>
                     </div> 
                     <div class="col-6">
@@ -153,7 +182,7 @@
                 <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
                     <div class="col-6">
                         <div class="d-flex col-12 justify-content-center align-items-center">
-                            <img src="img/productos/cuadros/tripticoMapamundi.jpg" loading="lazy" alt="J&C Mapamundi Triptico">
+                            <img class="imgPr" src="img/productos/cuadros/tripticoMapamundi.jpg" loading="lazy" alt="J&C Mapamundi Triptico">
                         </div>
                     </div> 
                     <div class="col-6">
@@ -173,7 +202,7 @@
                 <div class="col-sm-10 col-md-5 d-flex align-items-center tarjetaPr mt-5 p-5 border rounded">
                     <div class="col-6">
                         <div class="d-flex col-12 justify-content-center align-items-center">
-                            <img src="img/productos/juegos/rompecabezasLeon.jpg" loading="lazy" alt="J&C Rompecabezas Leon">
+                            <img class="imgPr" src="img/productos/juegos/rompecabezasLeon.jpg" loading="lazy" alt="J&C Rompecabezas Leon">
                         </div>
                     </div> 
                     <div class="col-6">
@@ -275,7 +304,8 @@
     </footer>
     
     <!-- JS -->
-    <script src="/js/main.js"></script>
+    <script src="/js/zoomImg.js"></script>
+    <script src="js/buscador.js"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
