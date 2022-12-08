@@ -2,6 +2,11 @@ a {
     text-decoration: none !important;
 }
 
+hr {
+    position: relative;
+    z-index: -1;
+}
+
 .imgPr {
     height: 8rem;
     max-width: 8rem;
@@ -15,10 +20,6 @@ a {
 
 .cuadroBusqueda {
     display: none;
-}
-
-.displayBlock {
-    display: block;
 }
 
 #buscador {
@@ -35,6 +36,10 @@ a {
     background: none;
     border: none;
     font-size: 40px;
+}
+
+#btnBuscador:hover {
+    color: grey;
 }
 
 .floatingWhatsApp {

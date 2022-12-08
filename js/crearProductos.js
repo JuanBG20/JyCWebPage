@@ -17,7 +17,7 @@ const pRompecabezas = "$800";
 const pCLinea = "$1100";
 
 const pEsfNav = "$100";
-const pPesebre = "$";
+const pPesebre = "$550";
 
 // Llaveros FILA 1
 crearPr("lRow1", "img/productos/llaveros/river.jpg", "Llavero River", pLlaverosComplejos);

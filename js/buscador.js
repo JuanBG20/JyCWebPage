@@ -1,11 +1,32 @@
+// Alternar Estado Cuadro de Busqueda
 const lupa = document.getElementById("btnLupa");
-const cuadroBusq = document.getElementById("cuadroBusqueda");
+const cuadroBusqueda = document.querySelector(".cuadroBusqueda");
+
+let isActive = false;
 
 lupa.addEventListener("click", () => {
-    /* cuadroBusq.style.display = "block"; */
-    cuadroBusq.classList.add("displayBlock");
+    if(!isActive) {
+        cuadroBusqueda.style.display = "block"
+        isActive = true;
+    } else {
+        cuadroBusqueda.style.display = "none";
+        isActive = false;
+    }
 });
 
+// Borrar Contenido Cuadro de Busqueda
+const cruz = document.getElementById("btnBuscador");
+const inputBuscador = document.getElementById("buscador");
+
+cruz.addEventListener("click", () => {
+    inputBuscador.value = "";
+
+    document.querySelectorAll(".producto").forEach(productos => {
+        productos.style.display = "flex";
+    });
+});
+
+// Filtro de Busqueda
 document.addEventListener("keyup", e => {
     if(e.target.matches("#buscador")) {
         document.querySelectorAll(".producto").forEach(producto => {
