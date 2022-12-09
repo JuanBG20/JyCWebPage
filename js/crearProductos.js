@@ -158,17 +158,17 @@ function crearPr(idRow, imgPr, descPr, precioPr, boton, modalBoton) {
 
 
 // Modals Llaveros
-crearModal("modalLDM", "Llaveros Día de la Madre", "img/productos/llaveros/iLoveMama.jpg", "J&C Llavero I Love Mama", pLlaverosComplejos, "img/productos/llaveros/yoAmoMama.jpg", "J&C Llavero Yo Amo Mama", pLlaverosComplejos);
-crearModal("modalLFD", "Llaveros Feliz Día", "img/productos/llaveros/felizDiaV1.jpg", "J&C Llavero Feliz Dia V1", pLlaverosComplejos, "img/productos/llaveros/felizDiaV2.jpg", "J&C Llavero Feliz Dia V2", pLlaverosComplejos);
-crearModal("modalLP", "Llaveros Piecitos", "img/productos/llaveros/pieCeleste.jpg", "J&C Llavero Pie Celeste",  pLlaverosComplejos, "img/productos/llaveros/pieRosa.jpg", "J&C Llavero Pie Rosa", pLlaverosComplejos);
+crearModal("modalLDM", "Llaveros Día de la Madre", "img/productos/llaveros/iLoveMama.jpg", "J&C Llavero I Love Mama", pLlaverosComplejos, "img/productos/llaveros/yoAmoMama.jpg", "J&C Llavero Yo Amo Mama", pLlaverosComplejos, "", "", "", "", "", "");
+crearModal("modalLFD", "Llaveros Feliz Día", "img/productos/llaveros/felizDiaV1.jpg", "J&C Llavero Feliz Dia V1", pLlaverosComplejos, "img/productos/llaveros/felizDiaV2.jpg", "J&C Llavero Feliz Dia V2", pLlaverosComplejos, "", "", "", "", "", "");
+crearModal("modalLP", "Llaveros Piecitos", "img/productos/llaveros/pieCeleste.jpg", "J&C Llavero Pie Celeste",  pLlaverosComplejos, "img/productos/llaveros/pieRosa.jpg", "J&C Llavero Pie Rosa", pLlaverosComplejos, "", "", "", "", "", "");
 
 // Modals Portacelulares
-crearModal("modalPB", "Portacelulares Versión Básica", "img/productos/portacelulares/comunAmarillo.jpg", "J&C Portacelular Amarillo", pSoportesB, "img/productos/portacelulares/comunNaranja.jpg", "J&C Portacelular Naranja", pSoportesB, "img/productos/portacelulares/comunVerde.jpg", "J&C Portacelular Verde", pSoportesB);
+crearModal("modalPB", "Portacelulares Versión Básica", "img/productos/portacelulares/comunAmarillo.jpg", "J&C Portacelular Amarillo", pSoportesB, "img/productos/portacelulares/comunNaranja.jpg", "J&C Portacelular Naranja", pSoportesB, "img/productos/portacelulares/comunVerde.jpg", "J&C Portacelular Verde", pSoportesB, "", "", "");
 crearModal("modalPG", "Portacelulares Versión Gatitos", "img/productos/portacelulares/gatoMarmol.jpg", "J&C Portacelular Gato Marmol", pSoportesG, "img/productos/portacelulares/gatoAmarillo.jpg", "J&C Portacelular Gato Amarillo", pSoportesG, "img/productos/portacelulares/gatoAmarilloF.jpg", "J&C Portacelular Gato Amarillo Fluo", pSoportesG, "img/productos/portacelulares/gatoGris.jpg", "J&C Portacelular Gato Gris", pSoportesG);
 
 // Modals Cuadros
-crearModal("modalCNY", "Cuadros New York", "img/productos/cuadros/newYork.jpg", "J&C Cuadro New York", pCuadrosChicos, "img/productos/cuadros/newYorkNegro.jpg", "J&C Cuadro New York Negro", pCuadrosNegros);
-crearModal("modalCS", "Cuadros Safari", "img/productos/cuadros/safari.jpg", "J&C Cuadro Safari", pCuadrosChicos, "img/productos/cuadros/safariNegro.jpg", "J&C Cuadro Safari Negro", pCuadrosNegros);
+crearModal("modalCNY", "Cuadros New York", "img/productos/cuadros/newYork.jpg", "J&C Cuadro New York", pCuadrosChicos, "img/productos/cuadros/newYorkNegro.jpg", "J&C Cuadro New York Negro", pCuadrosNegros, "", "", "", "", "", "");
+crearModal("modalCS", "Cuadros Safari", "img/productos/cuadros/safari.jpg", "J&C Cuadro Safari", pCuadrosChicos, "img/productos/cuadros/safariNegro.jpg", "J&C Cuadro Safari Negro", pCuadrosNegros, "", "", "", "", "", "");
 
 // Funcion para crear el modal de un producto
 function crearModal(idModal, titulo, srcImg0, altImg0, precio0, srcImg1, altImg1, precio1, srcImg2, altImg2, precio2, srcImg3, altImg3, precio3) {
