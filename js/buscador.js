@@ -1,6 +1,8 @@
 // Alternar Estado Cuadro de Busqueda
 const lupa = document.getElementById("btnLupa");
 const cuadroBusqueda = document.querySelector(".cuadroBusqueda");
+const btnMenu = document.getElementById("btnNav");
+const divMenu = document.getElementById("navbarSupportedContent");
 
 let isActive = false;
 
@@ -11,6 +13,21 @@ lupa.addEventListener("click", () => {
     } else {
         cuadroBusqueda.style.display = "none";
         isActive = false;
+    }
+
+    if(!btnMenu.classList.contains("collapsed")) {
+        btnMenu.classList.add("collapsed");
+        divMenu.classList.remove("show");
+
+        btnMenu.setAttribute("aria-expanded", "false");
+    }
+});
+
+btnMenu.addEventListener("click", () => {
+    if(isActive) {
+        cuadroBusqueda.style.display = "none";
+
+        isActive = "false";
     }
 });
 

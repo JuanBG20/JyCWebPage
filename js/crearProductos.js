@@ -9,12 +9,16 @@ const pMFlexi = "$200";
 const pSoportesB = "$800";
 const pSoportesG = "$500";
 
-const pCuadrosSimples = "$1500";
+const pCuadrosGrandes = "$1500";
+const pCuadrosChicos = "$1300";
 const pCuadrosComplejos = "$2000";
-const pCuadrosNegros = "$1800";
+const pCuadrosNegros = "$1500";
 
 const pRompecabezas = "$800";
 const pCLinea = "$1100";
+
+const pLetras = "$1800";
+const pNumeros = "$1800"
 
 const pEsfNav = "$100";
 const pPesebre = "$550";
@@ -69,22 +73,32 @@ crearPr("scRow1", "img/productos/portacelulares/comunAmarillo.jpg", "Portacelula
 crearPr("scRow1", "img/productos/portacelulares/gatoMarmol.jpg", "Portacelulares Versión Gatitos", pSoportesG, true, "modalPG");
 
 // Cuadros FILA 1
-crearPr("cuaRow1", "img/productos/cuadros/tripticoMapamundi.jpg", "Cuadro Mapamundi Tríptico", pCuadrosSimples);
-crearPr("cuaRow1", "img/productos/cuadros/tripticoHojas.jpg", "Cuadro Hojas Tríptico", pCuadrosSimples);
-crearPr("cuaRow1", "img/productos/cuadros/cuboRubik.jpg", "Cuadro Cubo de Rubik", pCuadrosSimples);
+crearPr("cuaRow1", "img/productos/cuadros/tripticoMapamundi.jpg", "Cuadro Mapamundi Tríptico", pCuadrosGrandes);
+crearPr("cuaRow1", "img/productos/cuadros/tripticoHojas.jpg", "Cuadro Hojas Tríptico", pCuadrosChicos);
+crearPr("cuaRow1", "img/productos/cuadros/tripticoBambu.jpg", "Cuadro Bambú Tríptico", pCuadrosChicos);
 crearPr("cuaRow1", "img/productos/cuadros/tripticoParis.jpg", "Cuadro Torre Eiffel", pCuadrosComplejos);
-crearPr("cuaRow1", "img/productos/cuadros/gatoNegro.jpg", "Cuadro Gato Negro", pCuadrosNegros);
+crearPr("cuaRow1", "img/productos/cuadros/tripticoGoodVibes.jpg", "Cuadro Good Vibes Tríptico", pCuadrosGrandes);
 
 // Cuadros FILA 2
-crearPr("cuaRow2", "img/productos/cuadros/newYork.jpg", "Cuadro New York", pCuadrosSimples, true, "modalCNY");
-crearPr("cuaRow2", "img/productos/cuadros/safari.jpg", "Cuadro Safari", pCuadrosSimples, true, "modalCS");
+crearPr("cuaRow2", "img/productos/cuadros/paris.jpg", "Cuadro Paris", pCuadrosComplejos)
+crearPr("cuaRow2", "img/productos/cuadros/gatoNegro.jpg", "Cuadro Gato Negro", pCuadrosNegros);
+crearPr("cuaRow2", "img/productos/cuadros/rubik.jpg", "Cuadro Cubo de Rubik", pCuadrosChicos);
+crearPr("cuaRow2", "img/productos/cuadros/newYork.jpg", "Cuadro New York", pCuadrosChicos, true, "modalCNY");
+crearPr("cuaRow2", "img/productos/cuadros/safari.jpg", "Cuadro Safari", pCuadrosChicos, true, "modalCS");
 
 // Juegos FILA 1
 crearPr("jRow1", "img/productos/juegos/rompecabezasLeon.jpg", "Rompecabezas León", pRompecabezas);
 crearPr("jRow1", "img/productos/juegos/rompecabezasSerpiente.jpg", "Rompecabezas Serpiente", pRompecabezas);
 crearPr("jRow1", "img/productos/juegos/rompecabezasElefante.jpg", "Rompecabezas Elefante", pRompecabezas);
 crearPr("jRow1", "img/productos/juegos/rompecabezasConejo.jpg", "Rompecabezas Conejo", pRompecabezas);
-crearPr("jRow1", "img/productos/juegos/4enLinea.jpeg", "4 en Línea", pCLinea);
+crearPr("jRow1", "img/productos/juegos/4enLinea.jpeg", "Rompecabezas Dinosaurio", pRompecabezas);
+
+//Juegos FILA 2
+crearPr("jRow2", "img/productos/juegos/4enLinea.jpeg", "4 en Línea", pCLinea);
+
+// Letras y Numeros FILA 1
+crearPr("lnRow1", "img/productos/letras/letraA.jpg", "Letra A", pLetras);
+crearPr("lnRow1", "img/productos/numeros/numero1.jpg", "Número 1", pNumeros);
 
 // Navidad FILA 1
 crearPr("navRow1", "img/productos/navidad/esferasVarias.jpg", "Esferas de Navidad con Formas", pEsfNav);
@@ -140,4 +154,135 @@ function crearPr(idRow, imgPr, descPr, precioPr, boton, modalBoton) {
 
         divC.appendChild(button);
     }
+}
+
+
+// Modals Llaveros
+crearModal("modalLDM", "Llaveros Día de la Madre", "img/productos/llaveros/iLoveMama.jpg", "J&C Llavero I Love Mama", pLlaverosComplejos, "img/productos/llaveros/yoAmoMama.jpg", "J&C Llavero Yo Amo Mama", pLlaverosComplejos);
+crearModal("modalLFD", "Llaveros Feliz Día", "img/productos/llaveros/felizDiaV1.jpg", "J&C Llavero Feliz Dia V1", pLlaverosComplejos, "img/productos/llaveros/felizDiaV2.jpg", "J&C Llavero Feliz Dia V2", pLlaverosComplejos);
+crearModal("modalLP", "Llaveros Piecitos", "img/productos/llaveros/pieCeleste.jpg", "J&C Llavero Pie Celeste",  pLlaverosComplejos, "img/productos/llaveros/pieRosa.jpg", "J&C Llavero Pie Rosa", pLlaverosComplejos);
+
+// Modals Portacelulares
+crearModal("modalPB", "Portacelulares Versión Básica", "img/productos/portacelulares/comunAmarillo.jpg", "J&C Portacelular Amarillo", pSoportesB, "img/productos/portacelulares/comunNaranja.jpg", "J&C Portacelular Naranja", pSoportesB, "img/productos/portacelulares/comunVerde.jpg", "J&C Portacelular Verde", pSoportesB);
+crearModal("modalPG", "Portacelulares Versión Gatitos", "img/productos/portacelulares/gatoMarmol.jpg", "J&C Portacelular Gato Marmol", pSoportesG, "img/productos/portacelulares/gatoAmarillo.jpg", "J&C Portacelular Gato Amarillo", pSoportesG, "img/productos/portacelulares/gatoAmarilloF.jpg", "J&C Portacelular Gato Amarillo Fluo", pSoportesG, "img/productos/portacelulares/gatoGris.jpg", "J&C Portacelular Gato Gris", pSoportesG);
+
+// Modals Cuadros
+crearModal("modalCNY", "Cuadros New York", "img/productos/cuadros/newYork.jpg", "J&C Cuadro New York", pCuadrosChicos, "img/productos/cuadros/newYorkNegro.jpg", "J&C Cuadro New York Negro", pCuadrosNegros);
+crearModal("modalCS", "Cuadros Safari", "img/productos/cuadros/safari.jpg", "J&C Cuadro Safari", pCuadrosChicos, "img/productos/cuadros/safariNegro.jpg", "J&C Cuadro Safari Negro", pCuadrosNegros);
+
+// Funcion para crear el modal de un producto
+function crearModal(idModal, titulo, srcImg0, altImg0, precio0, srcImg1, altImg1, precio1, srcImg2, altImg2, precio2, srcImg3, altImg3, precio3) {
+    const sectModals = document.getElementById("modals");
+
+    const modal = document.createElement("div");
+    const modalDialog = document.createElement("div");
+    const modalContent = document.createElement("div");
+
+    // Header
+    const modalHeader = document.createElement("div");
+    const title = document.createElement("h5");
+    const closeBtn = document.createElement("button");
+
+    // Body
+    const modalBody = document.createElement("div");
+    const divContainer = document.createElement("div");
+
+    const allImg = [
+        img0 = document.createElement("img"),
+        img1 = document.createElement("img"),
+        img2 = document.createElement("img"),
+        img3 = document.createElement("img")
+    ];
+
+    const allP = [
+        p0 = document.createElement("p"),
+        p1 = document.createElement("p"),
+        p2 = document.createElement("p"),
+        p3 = document.createElement("p")
+    ];
+    
+    // Footer
+    const modalFooter = document.createElement("div");
+    const closeBtnF = document.createElement("button");
+
+    modal.classList.add("modal", "fade");
+    modalDialog.classList.add("modal-dialog");
+    modalContent.classList.add("modal-content");
+
+    // Header
+    modalHeader.classList.add("modal-header");
+    title.classList.add("modal-title");
+    closeBtn.classList.add("btn-close");
+
+    // Body
+    modalBody.classList.add("modal-body");
+    divContainer.classList.add("container-fluid", "d-flex", "flex-column", "align-items-center");
+
+    allImg.forEach(img => {
+        img.classList.add("imgPr");
+        img.setAttribute("loading", "lazy");
+    });
+
+    allP.forEach(p => {
+        p.classList.add("text-primary", "mt-3");
+    });
+    
+    // Footer
+    modalFooter.classList.add("modal-footer");
+    closeBtnF.classList.add("btn", "btn-danger");
+
+    modal.setAttribute("id", idModal);
+
+    // Header
+    closeBtn.setAttribute("type", "button");
+    closeBtn.setAttribute("data-bs-dismiss", "modal");
+    closeBtn.setAttribute("aria-label", "Cerrar");
+
+    // Body
+    allImg[0].setAttribute("src", srcImg0);
+    allImg[0].setAttribute("alt", altImg0);
+    allImg[1].setAttribute("src", srcImg1);
+    allImg[1].setAttribute("alt", altImg1);
+    allImg[2].setAttribute("src", srcImg2);
+    allImg[2].setAttribute("alt", altImg2);
+    allImg[3].setAttribute("src", srcImg3);
+    allImg[3].setAttribute("alt", altImg3);
+
+    // Footer
+    closeBtnF.setAttribute("type", "button");
+    closeBtnF.setAttribute("data-bs-dismiss", "modal");
+
+    // Header
+    title.innerText = titulo;
+
+    // Body
+    p0.innerText = precio0;
+    p1.innerText = precio1;
+    p2.innerText = precio2;
+    p3.innerText = precio3;
+
+    // Footer
+    closeBtnF.innerText = "Cerrar";
+
+    sectModals.appendChild(modal);
+    modal.appendChild(modalDialog);
+    modalDialog.appendChild(modalContent);
+
+    // Header
+    modalContent.appendChild(modalHeader);
+    modalHeader.appendChild(title);
+    modalHeader.appendChild(closeBtn);
+
+    // Body
+    modalContent.appendChild(modalBody);
+    modalBody.appendChild(divContainer);
+
+    srcImg0 == "" ? "" : divContainer.appendChild(allImg[0]) && divContainer.appendChild(allP[0]);
+    srcImg1 == "" ? "" : divContainer.appendChild(allImg[1]) && divContainer.appendChild(allP[1]);
+    srcImg2 == "" ? "" : divContainer.appendChild(allImg[2]) && divContainer.appendChild(allP[2]);
+    srcImg3 == "" ? "" : divContainer.appendChild(allImg[3]) && divContainer.appendChild(allP[3]);
+
+    // Footer
+    modalContent.appendChild(modalFooter);
+    modalFooter.appendChild(closeBtnF);
 }
