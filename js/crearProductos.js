@@ -91,10 +91,10 @@ crearPr("jRow1", "img/productos/juegos/rompecabezasLeon.jpg", "Rompecabezas Leó
 crearPr("jRow1", "img/productos/juegos/rompecabezasSerpiente.jpg", "Rompecabezas Serpiente", pRompecabezas);
 crearPr("jRow1", "img/productos/juegos/rompecabezasElefante.jpg", "Rompecabezas Elefante", pRompecabezas);
 crearPr("jRow1", "img/productos/juegos/rompecabezasConejo.jpg", "Rompecabezas Conejo", pRompecabezas);
-crearPr("jRow1", "img/productos/juegos/4enLinea.jpeg", "Rompecabezas Dinosaurio", pRompecabezas);
+crearPr("jRow1", "img/productos/juegos/rompecabezasDino.jpg", "Rompecabezas Dinosaurio", pRompecabezas);
 
 //Juegos FILA 2
-crearPr("jRow2", "img/productos/juegos/4enLinea.jpeg", "4 en Línea", pCLinea);
+crearPr("jRow2", "img/productos/juegos/4enLinea.jpg", "4 en Línea", pCLinea);
 
 // Letras y Numeros FILA 1
 crearPr("lnRow1", "img/productos/letras/letraA.jpg", "Letra A", pLetras);
@@ -103,7 +103,7 @@ crearPr("lnRow1", "img/productos/numeros/numero1.jpg", "Número 1", pNumeros);
 // Navidad FILA 1
 crearPr("navRow1", "img/productos/navidad/esferasVarias.jpg", "Esferas de Navidad con Formas", pEsfNav);
 crearPr("navRow1", "img/productos/navidad/esferasPalabras.jpg", "Esferas de Navidad con Palabras", pEsfNav);
-crearPr("navRow1", "img/productos/navidad/pesebre.jpeg", "Pesebre Estrella", pPesebre);
+crearPr("navRow1", "img/productos/navidad/pesebre.jpg", "Pesebre Estrella", pPesebre);
 
 // Funcion para crear productos comunes
 function crearPr(idRow, imgPr, descPr, precioPr, boton, modalBoton) {

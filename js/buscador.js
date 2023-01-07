@@ -27,7 +27,7 @@ btnMenu.addEventListener("click", () => {
     if(isActive) {
         cuadroBusqueda.style.display = "none";
 
-        isActive = "false";
+        isActive = false;
     }
 });
 
