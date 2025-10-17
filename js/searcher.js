@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('article');
       card.classList.add('product-card', 'fade-in');
 
-      console.log(prod.img);
       card.innerHTML = `
           <img src="${prod.img}" alt="${prod.name}" class="zoom-img" />
           <h3>${prod.name}</h3>
